@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      height: 50vh;
+    }
+      .CB{
+      height: 100%;
+      display: grid;
+      grid-template-columns:repeat(4,100px);
+      grid-template-rows: repeat(2,100px);
+      gap: 4px;
+     
+    }
+    .just{
+      justify-self:center;
+    }
+    .CB div:nth-child(2n){
+      background-color: aquamarine;
+    }
+    .CB div:nth-child(2n+1){
+      background-color: royalblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="CB">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>1</div>
+    <div class="just">2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+  
+</body>
+
+</html>
